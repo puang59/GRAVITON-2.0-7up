@@ -3,9 +3,7 @@ from typing import Union
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from ml import predict_orders  
-
-print(predict_orders("Shampoo"))
+from ml import predict_orders
 
 app = FastAPI()
 

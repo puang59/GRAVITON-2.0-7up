@@ -26,8 +26,6 @@ def type_replace(obj):
 
 df['product_type'] = df['product_type'].apply(type_replace)
 
-df.drop(columns='location', inplace=True)
-
 col_list = list(df.columns)[2:]
 day_data = []
 for i in col_list:
@@ -68,5 +66,29 @@ def predict_orders(product_name):
         model = model_list[i]
         prediction = model.predict(input_data)
         predictions.append(prediction[0])
-    
+    print(predictions)
     return predictions
+
+def top_location():
+    # Create a DataFrame to store the total demand for each product in each location 
+    demand_df = df.groupby(['product_name', 'location']).size().reset_index(name='demand')
+    
+    # Sort the DataFrame by demand in descending order
+    sorted_demand_df = demand_df.sort_values(by='demand', ascending=False)
+    
+    # Get the top 5 demanded products
+    top_products = sorted_demand_df['product_name'].unique()[:5]
+    
+    # Initialize a dictionary to store the top locations for each product
+    top_location_dict = {}
+    
+    # Iterate over the top demanded products
+    for product in top_products:
+        # Find the location with the highest demand for the current product
+        top_location = sorted_demand_df[sorted_demand_df['product_name'] == product].iloc[0]['location']
+        
+        # Add the product and its corresponding top location to the dictionary
+        top_location_dict[product] = top_location
+    
+    print(top_location_dict)
+    return top_location_dict
