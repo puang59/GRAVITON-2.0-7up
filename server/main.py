@@ -12,7 +12,7 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
-
+    
 @app.get("/predict/{product_name}") 
 def predict_sales(product_name: str):
     predictions = predict_orders(product_name)
