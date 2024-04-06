@@ -4,10 +4,12 @@ import Image from 'next/image';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
+import FeedIcon from '@mui/icons-material/Feed';
+
 export default function Sidebar() {
     const sidebarItems = [
         { icon: <PieChartIcon />, text: 'Dashboard', name:"dashboard"},
-        { icon: <PieChartIcon />, text: 'Product Info',name:"product-info"},
+        { icon: <FeedIcon />, text: 'Product Info',name:"product-info"},
         { icon: <PieChartIcon />, text: 'Item 2' },
         { icon: <PieChartIcon />, text: 'Item 3' }
     ];
