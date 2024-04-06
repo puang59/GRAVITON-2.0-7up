@@ -1,0 +1,31 @@
+product_id,product_name,product_type,orders_monday,orders_tuesday,orders_wednesday,orders_thursday,orders_friday,location
+1,LG TV Bravia 22.1,Technology,37,189,43,51,29,Jaipur
+2,WD-40 Glue,Convenience Products,8,12,3,15,7,Ahmedabad
+3,Cotton Threads,Raw Materials,25,21,18,28,23,Pune
+4,Smartphone,Technology,42,33,30,36,38,Jaipur
+5,Steel Sheets,Raw Materials,19,14,17,22,20,Pune
+6,Laptop,Technology,50,55,57,60,62,Jaipur
+7,Mouse,Technology,63,67,69,71,75,Ahmedabad
+8,Printer,Technology,75,80,82,85,88,Pune
+9,Pen Drive,Technology,89,92,95,99,101,Jaipur
+10,Keyboard,Technology,103,108,111,115,117,Pune
+11,Camera,Technology,120,124,126,130,135,Jaipur
+12,Headphones,Technology,137,142,145,148,151,Ahmedabad
+13,Charger,Technology,155,159,162,165,169,Pune
+14,Monitor,Technology,170,175,179,182,185,Jaipur
+15,Tablet,Technology,190,195,199,203,207,Pune
+16,Shampoo,Toiletry,210,213,217,220,224,Jaipur
+17,Toothpaste,Toiletry,225,229,232,235,239,Ahmedabad
+18,Soap,Toiletry,240,245,248,252,255,Pune
+19,Towel,Toiletry,260,264,267,271,274,Jaipur
+20,Toilet Paper,Toiletry,275,279,282,286,290,Pune
+21,Chips,Snacks,295,299,302,305,309,Jaipur
+22,Cookies,Snacks,310,314,318,322,325,Ahmedabad
+23,Soda,Snacks,330,333,337,340,345,Pune
+24,Candy,Snacks,350,354,358,362,365,Jaipur
+25,Chocolate,Snacks,370,375,379,383,387,Pune
+26,Earphones,Technology,390,395,399,402,405,Jaipur
+27,Speakers,Technology,410,415,418,422,426,Ahmedabad
+28,Power Bank,Technology,430,434,438,441,445,Pune
+29,USB Cable,Technology,450,455,459,462,465,Jaipur
+30,Hard Drive,Technology,470,475,479,483,487,Pune
