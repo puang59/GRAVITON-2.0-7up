@@ -15,7 +15,6 @@ export default function GetForm({
             <h2>Origin: {origin}</h2>
             <h2>Popularity Rank: {popularity}</h2>
             <h2>Availability: {availability}</h2>
-            <h2>Quantity: {quantity}</h2>
         </div>
     );
 }
