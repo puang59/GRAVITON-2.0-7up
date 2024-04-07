@@ -79,16 +79,18 @@ def top_location():
     # Get the top 5 demanded products
     top_products = sorted_demand_df['product_name'].unique()[:5]
     
-    # Initialize a dictionary to store the top locations for each product
-    top_location_dict = {}
+    # Initialize a set to store unique locations
+    unique_locations = set()
     
     # Iterate over the top demanded products
     for product in top_products:
         # Find the location with the highest demand for the current product
         top_location = sorted_demand_df[sorted_demand_df['product_name'] == product].iloc[0]['location']
         
-        # Add the product and its corresponding top location to the dictionary
-        top_location_dict[product] = top_location
+        # Add the top location to the set
+        unique_locations.add(top_location)
     
-    print(top_location_dict)
-    return top_location_dict
+    # Convert the set to a list and return
+    unique_locations_list = list(unique_locations)
+    print(unique_locations_list)
+    return unique_locations_list

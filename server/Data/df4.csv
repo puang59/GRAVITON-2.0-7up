@@ -1,31 +1,31 @@
 product_id,product_name,product_type,orders_monday,orders_tuesday,orders_wednesday,orders_thursday,orders_friday,location
-1,LG TV Bravia 22.1,Technology,22,130,20,21,19,Jaipur
-2,WD-40 Glue,Convenience Products,12,13,11,14,12,Ahmedabad
-3,Cotton Threads,Raw Materials,17,16,15,18,17,Pune
-4,Smartphone,Technology,24,22,21,23,22,Jaipur
-5,Steel Sheets,Raw Materials,16,14,15,17,16,Pune
-6,Laptop,Technology,30,31,32,33,34,Jaipur
-7,Mouse,Technology,35,36,37,38,39,Ahmedabad
-8,Printer,Technology,40,41,42,43,44,Pune
-9,Pen Drive,Technology,45,46,47,48,49,Jaipur
-10,Keyboard,Technology,50,51,52,53,54,Pune
-11,Camera,Technology,55,56,57,58,59,Jaipur
-12,Headphones,Technology,60,61,62,63,64,Ahmedabad
-13,Charger,Technology,65,66,67,68,69,Pune
-14,Monitor,Technology,70,71,72,73,74,Jaipur
-15,Tablet,Technology,75,76,77,78,79,Pune
-16,Shampoo,Toiletry,80,81,82,83,84,Jaipur
-17,Toothpaste,Toiletry,85,86,87,88,89,Ahmedabad
-18,Soap,Toiletry,90,91,92,93,94,Pune
-19,Towel,Toiletry,95,96,97,98,99,Jaipur
-20,Toilet Paper,Toiletry,100,101,102,103,104,Pune
-21,Chips,Snacks,105,106,107,108,109,Jaipur
-22,Cookies,Snacks,110,111,112,113,114,Ahmedabad
-23,Soda,Snacks,115,116,117,118,119,Pune
-24,Candy,Snacks,120,121,122,123,124,Jaipur
-25,Chocolate,Snacks,125,126,127,128,129,Pune
-26,Earphones,Technology,130,131,132,133,134,Jaipur
-27,Speakers,Technology,135,136,137,138,139,Ahmedabad
-28,Power Bank,Technology,140,141,142,143,144,Pune
-29,USB Cable,Technology,145,146,147,148,149,Jaipur
-30,Hard Drive,Technology,150,151,152,153,154,Pune
+1,LG TV Bravia 22.1,Technology,25,27,29,30,28,Delhi
+2,WD-40 Glue,Convenience Products,9,10,11,8,7,Mumbai
+3,Cotton Threads,Raw Materials,13,11,14,10,12,Bangalore
+4,Smartphone,Technology,18,15,16,17,19,Kolkata
+5,Steel Sheets,Raw Materials,7,8,10,11,9,Chennai
+6,Laptop,Technology,24,23,22,25,26,Hyderabad
+7,Mouse,Technology,31,33,30,28,29,Pune
+8,Printer,Technology,35,34,32,36,37,Ahmedabad
+9,Pen Drive,Technology,42,39,37,40,41,Surat
+10,Keyboard,Technology,46,43,44,45,47,Jaipur
+11,Camera,Technology,48,50,51,49,52,Lucknow
+12,Headphones,Technology,53,54,55,56,57,Kanpur
+13,Charger,Technology,60,62,63,58,59,Nagpur
+14,Monitor,Technology,64,62,66,61,65,Ludhiana
+15,Tablet,Technology,66,65,63,67,64,Agra
+16,Shampoo,Toiletry,72,73,74,75,70,Indore
+17,Toothpaste,Toiletry,75,78,77,79,76,Varanasi
+18,Soap,Toiletry,82,80,81,85,83,Patna
+19,Towel,Toiletry,87,88,90,85,86,Ranchi
+20,Toilet Paper,Toiletry,90,93,91,94,92,Raipur
+21,Chips,Snacks,96,97,98,95,99,Bhubaneswar
+22,Cookies,Snacks,104,102,100,101,103,Guwahati
+23,Soda,Snacks,110,111,112,113,109,Chandigarh
+24,Candy,Snacks,112,113,110,118,115,Dehradun
+25,Chocolate,Snacks,119,115,117,118,120,Jodhpur
+26,Earphones,Technology,121,123,125,124,122,Kochi
+27,Speakers,Technology,128,127,125,129,126,Visakhapatnam
+28,Power Bank,Technology,130,131,134,132,133,Coimbatore
+29,USB Cable,Technology,136,138,139,137,135,Thiruvananthapuram
+30,Hard Drive,Technology,138,139,137,136,135,Bhopal
