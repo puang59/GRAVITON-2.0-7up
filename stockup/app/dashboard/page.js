@@ -1,6 +1,6 @@
 'use client';
 import Sidebar from "../components/Sidebar";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { productinfo } from "../utils/productinfo";
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 import { outofstockproduct } from "../utils/outofstockproduct";
@@ -8,11 +8,13 @@ import { instockproduct } from "../utils/instockproduct";
 import WarningIcon from '@mui/icons-material/Warning';
 import DoneIcon from '@mui/icons-material/Done';
 import DangerousIcon from '@mui/icons-material/Dangerous';
+import {Chart} from "chart.js/auto";
 
 export default function Dashboard() {
     const [productCount, setProductCount] = useState(0);
     const [outOfStock, setOutOfStock] = useState(0);
     const [inStock, setInStock] = useState(0);
+    const chartRef = useRef(null);
 
     useEffect(() => {
         async function fetchData() {
@@ -37,6 +39,43 @@ export default function Dashboard() {
             }
         }
         fetchInStock();
+    }, []);
+
+    useEffect(() => {
+        if (chartRef.current) {
+            if (chartRef.current.chart) {
+                chartRef.current.chart.destroy();
+            }
+    
+            const context = chartRef.current.getContext("2d");
+    
+            const newChart = new Chart(context, {
+                type: "line",
+                data: {
+                    labels: ["December", "January", "February", "March", "April"],
+                    datasets: [
+                        {
+                            label: "Info",
+                            data: [10000,15000,3000,7000,11000],
+                            backgroundColor: "#210637",
+                            borderColor:"#422C54"
+                        },
+                    ],
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            type: "category",
+                        },
+                        y: {
+                            beginAtZero: true,
+                        },
+                    },
+                },
+            });
+            chartRef.current.chart = newChart;
+        }
     }, []);
 
     return (
@@ -83,6 +122,10 @@ export default function Dashboard() {
                             
                         </div>
                     </div>
+                </div>
+                <div>
+                    <h3 className="mt-20 ml-20 text-3xl">Revenue</h3>
+                    <canvas ref={chartRef} className="ml-20 h-[40%] max-w-screen-lg max-h-[45vh] text-white"/>
                 </div>
             </div>
         </div> 
