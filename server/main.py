@@ -15,8 +15,13 @@ def read_root():
 def predict_sales(product_name: str):
     predictions = predict_orders(product_name)
     rounded_values = []
+    count = 0
     for i in predictions:
-        rounded_values.append(round(i))
+        if count == 0:
+            rounded_values.append((round(i)+1)*31)
+            count += 1;
+        else:
+            rounded_values.append(round(i))
     return {"predictions": rounded_values}  
 
 @app.get("/location")

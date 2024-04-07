@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@supabase/supabase-js": "^2.42.0",
+    "chart.js": "^4.4.2",
     "cors": "^2.8.5",
     "dynamsoft-barcode-reader": "^10.2.10",
     "dynamsoft-camera-enhancer": "^4.0.2",
